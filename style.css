@@ -1,0 +1,308 @@
+
+*
+{
+  margin-top: 10 px;
+  margin-bottom: 10px;
+    margin-right: 0px;
+    margin-left: 0px;
+    color: #000000;
+    font-family: "Didot", "Comic Sans MS", "Helvetica Neue", sans-serif;
+    box-sizing: border-box;
+  }
+ 
+   img {
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+  }
+  
+  img {
+    border-radius: 50%;
+  }
+
+  @media screen and (max-width: 1050px) {
+    .svg-column {
+      width: 50%;
+    }
+  }
+  
+  @media screen and (max-width: 750px) {
+    .svg-column {
+      float: left;
+      width: 100%;
+      padding: 10px;
+    }
+    .triple-column {
+      width: 100%;
+    }
+  }
+  
+  .highlight-yellow {
+    background: linear-gradient(180deg,rgba(255,255,255, 0) 65%, #d6b69e89 65%);
+  }
+  
+  .space {
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 3em;
+
+  }
+  
+  .highlight-white {
+    background: linear-gradient(180deg,rgba(255,255,255, 0) 65%, #ffffff 65%);
+  }
+  
+  .thin-highlight-white {
+    background: linear-gradient(180deg,rgba(255,255,255, 0) 80%, #ffffff 80%);
+  }
+  
+  .thin-highlight-yellow {
+    background: linear-gradient(180deg,rgba(255,255,255, 0) 80%, #d6b69e89 80%);
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .name {
+    font-size: 500%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .intro {
+    font-size: 150%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+  }
+  
+  .margin {
+    margin-left: 110px;
+    margin-right: 110px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+  
+  .social-media {
+    display: flex;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.6em;
+    padding-bottom: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social-media-item {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .nav-bar {
+    width: 1%;
+    margin-left: .5px;
+    margin-right: 20px;
+  }
+  
+  .nav-item {
+    width: 1%;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  
+  .copyright {
+    text-align: center;
+  }
+  
+  .yellow-background {
+    background: #d6b69e89 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .white-background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .section-title {
+    font-size: 300%;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 0px;
+  }
+  
+  .descTitle {
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  
+  p {
+    margin: 0;
+    margin-top: 1.5rem;
+    font-size: 1.15rem;
+  }
+  
+  .bio {
+    margin-top: 0px;
+  }
+  
+  .proj-title {
+    font-size: 150%;
+  }
+  
+  .proj-text {
+    margin-top: 0;
+    font-style: italic;
+    padding-top: 5px;
+    font-size: 1rem;
+    margin-left: 5%;
+  }
+  
+  .icon {
+    width: 1em;
+    display: inline;
+    position: relative;
+    top: 0.45em;
+  }
+  
+  .dot-icon {
+    width: 1em;
+    display: inline;
+    position: relative;
+    top: 0.30em;
+  }
+  
+  .title-icon {
+    width: 1em;
+    display: inline;
+    position: relative;
+    top: 0.45em;
+    margin-left: 10px;
+    margin-top: 0px;
+  }
+
+  .love {
+    width: 1.5em;
+    display: inline;
+    position: relative;
+    top: 0.45em;
+   
+  }
+  
+  
+  .descriptive-icon {
+    width: 1.5em;
+    display: inline;
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: -10px;
+  }
+  
+  .svg-center {
+    text-align: center;
+  }
+ 
+  /* Style the navigation bar */
+.navbar {
+  width: 200%;
+  background-color: #d6b69e;
+  overflow: auto;
+}
+
+/* Navbar links */
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 25px;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+  background-color: #d0a584c7;
+} 
+
+/* Current/active navbar link */
+.active {
+  background-color: #d6b69e89;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 15px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #d0a584c7;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #d0a584;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
+
+body {
+  background-color: white;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell,
+      'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.text-slider-items {
+  display: none;
+}
+
+.heading {
+  margin-top: 200px;
+  text-align: center;
+}
+
+.heading h1 {
+  color: limegreen;
+  font-size: 70px;
+}
+
+.heading h3 {
+  color: black;
+  font-size: 20px;
+}
