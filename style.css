@@ -1,0 +1,186 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Gaegu&display=swap');
+
+/* General Reset and Base Styles */
+* {
+  margin: 10px 0;
+  color: #5c504d; /* Soft cocoa text color for a warm look */
+  font-family: 'Gaegu', sans-serif; /* Vintage typewriter font with a fallback */
+  box-sizing: border-box; /* Box sizing for consistent layout */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1050px) {
+  .svg-column {
+    width: 50%; /* Two-column layout on medium screens */
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .svg-column {
+    float: left;
+    width: 100%; /* Full width on smaller screens */
+    padding: 10px;
+  }
+  .triple-column {
+    width: 100%;
+  }
+}
+
+/* Highlight Backgrounds */
+.highlight-yellow {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, #f7d6b3 65%); /* Soft peachy yellow highlight */
+}
+
+.highlight-white {
+  background: linear-gradient(180deg, #ffffff00 65%, #ffb3b8 65%); /* Warm pink highlight */
+}
+
+.thin-highlight-white {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 80%, #ffb3b8 80%); /* Subtle warm pink highlight */
+}
+
+.thin-highlight-yellow {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 80%, #f7d6b3 80%); /* Subtle peachy yellow highlight */
+}
+
+/* Anchor Tag Styles */
+a {
+  text-decoration: none; /* Remove underline from links */
+  color: #ffb3b8; /* Soft pink for links */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+a:hover {
+  color: #5c504d; /* Cocoa brown on hover */
+}
+
+/* Main Title Styles */
+.name {
+  font-size: 3rem; /* Large title size */
+  margin: 0 5%; /* Margin for responsive design */
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 1px 1px #f7d6b3; /* Soft peachy yellow shadow for retro effect */
+}
+
+/* Intro Text Styles */
+.intro {
+  font-size: 1.5rem; /* Intro text size */
+  margin: 0 5%; /* Responsive margins */
+  margin-bottom: 5%;
+  color: #ffb3b8; /* Warm pink for intro text */
+}
+
+/* Margins for Content */
+.margin {
+  margin: 30px 110px 50px; /* Custom margins for sections */
+}
+
+/* Social Media Styles */
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.6em 1em;
+}
+
+.social-media-item {
+  padding: 0 1rem; /* Horizontal padding for items */
+}
+
+/* Navigation Bar Styles */
+.nav-bar {
+  margin: 0 40px; /* Responsive margins for nav */
+}
+
+.nav-item {
+  margin-right: 20px; /* Space between nav items */
+  font-weight: bold; /* Bold font for nav items */
+}
+
+/* Copyright Styles */
+.copyright {
+  text-align: center; /* Center the copyright text */
+}
+
+/* Background Styles */
+.yellow-background {
+  background: #fce4b9; /* Light and soft peachy yellow background */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px; /* Rounded corners for softer appearance */
+}
+
+.white-background {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Section Title Styles */
+.section-title {
+  font-size: 3rem; /* Large section titles */
+  text-align: center;
+  font-weight: bold;
+  margin-top: 0; /* Reset top margin */
+}
+
+/* Description Title Styles */
+.descTitle {
+  font-weight: bold;
+  margin-bottom: 0; /* Remove bottom margin */
+}
+
+/* Paragraph Styles */
+p {
+  margin: 1.5rem 0; /* Top and bottom margins for paragraphs */
+  font-size: 1.15rem; /* Standard paragraph size */
+}
+
+/* Bio Section Styles */
+.bio {
+  margin-top: 0; /* Reset top margin for bio */
+}
+
+/* Project Title Styles */
+.proj-title {
+  font-size: 1.5rem; /* Project title size */
+  color: #5c504d; /* Soft cocoa brown for project titles */
+}
+
+/* Project Text Styles */
+.proj-text {
+  margin-top: 0; /* Reset top margin */
+  font-style: italic; /* Italic for project descriptions */
+  padding-top: 5px; /* Padding on top */
+  font-size: 1rem; /* Standard text size */
+  margin-left: 5%; /* Responsive left margin */
+}
+
+/* Icon Styles */
+.icon, .dot-icon, .title-icon, .descriptive-icon {
+  width: 1.5em; /* Standard icon size */
+  display: inline;
+  position: relative;
+}
+
+.dot-icon {
+  top: 0.85em; /* Position for dot icon */
+}
+
+.title-icon {
+  margin-left: 10px; /* Left margin for title icon */
+}
+
+.descriptive-icon {
+  margin-bottom: -10px; /* Slight adjustment */
+}
+
+/* Centering SVGs */
+.svg-center {
+  text-align: center; /* Center-align SVG content */
+}
