@@ -4,7 +4,7 @@
 /* General Reset and Base Styles */
 * {
   margin: 10px 0;
-  color: #5c504d; /* Soft cocoa text color for a warm look */
+  color: #000000; /* Soft cocoa text color for a warm look */
   font-family: 'Gaegu', sans-serif; /* Vintage typewriter font with a fallback */
   box-sizing: border-box; /* Box sizing for consistent layout */
 }
@@ -29,30 +29,30 @@
 
 /* Highlight Backgrounds */
 .highlight-yellow {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, #f7d6b3 65%); /* Soft peachy yellow highlight */
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, #8c9657 65%); /* Soft peachy yellow highlight */
 }
 
 .highlight-white {
-  background: linear-gradient(180deg, #ffffff00 65%, #ffb3b8 65%); /* Warm pink highlight */
+  background: linear-gradient(180deg, #ffffff00 65%, #f0e5e7 65%); /* Warm pink highlight */
 }
 
 .thin-highlight-white {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 80%, #ffb3b8 80%); /* Subtle warm pink highlight */
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 80%, #f0e5e7 80%); /* Subtle warm pink highlight */
 }
 
 .thin-highlight-yellow {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 80%, #f7d6b3 80%); /* Subtle peachy yellow highlight */
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 80%, #8c9657 80%); /* Subtle peachy yellow highlight */
 }
 
 /* Anchor Tag Styles */
 a {
   text-decoration: none; /* Remove underline from links */
-  color: #ffb3b8; /* Soft pink for links */
+  color: #f0e5e7; /* Soft pink for links */
   transition: color 0.3s ease; /* Smooth color transition */
 }
 
 a:hover {
-  color: #5c504d; /* Cocoa brown on hover */
+  color: #000000; /* Cocoa brown on hover */
 }
 
 /* Main Title Styles */
@@ -61,7 +61,7 @@ a:hover {
   margin: 0 5%; /* Margin for responsive design */
   text-align: center;
   font-weight: bold;
-  text-shadow: 1px 1px #f7d6b3; /* Soft peachy yellow shadow for retro effect */
+  text-shadow: 1px 1px #8c9657; /* Soft peachy yellow shadow for retro effect */
 }
 
 /* Intro Text Styles */
@@ -69,7 +69,7 @@ a:hover {
   font-size: 1.5rem; /* Intro text size */
   margin: 0 5%; /* Responsive margins */
   margin-bottom: 5%;
-  color: #ffb3b8; /* Warm pink for intro text */
+  color: #f0e5e7; /* Warm pink for intro text */
 }
 
 /* Margins for Content */
@@ -106,7 +106,7 @@ a:hover {
 
 /* Background Styles */
 .yellow-background {
-  background: #fce4b9; /* Light and soft peachy yellow background */
+  background: #8c9657; /* Light and soft peachy yellow background */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -149,7 +149,7 @@ p {
 /* Project Title Styles */
 .proj-title {
   font-size: 1.5rem; /* Project title size */
-  color: #5c504d; /* Soft cocoa brown for project titles */
+  color: #000000; /* Soft cocoa brown for project titles */
 }
 
 /* Project Text Styles */
@@ -184,3 +184,47 @@ p {
 .svg-center {
   text-align: center; /* Center-align SVG content */
 }
+
+
+ 
+
+
+.polaroid-string { display: flex; /* Use flexbox to display items in a row */ justify-content: center; /* Center the polaroids horizontally */ align-items: center; /* Vertically center the polaroids */ position: relative; top: 1px; /* Adjust top position if needed */ }
+
+
+.polaroid {
+  width: 180px;
+  background-color: #f0e5e7;
+  padding: 10px;
+  border: 8px solid #8c9657;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+  margin: 0 15px; /* Space between images */
+}
+
+.polaroid-img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.caption {
+  margin: 10px 0;
+  color: #000000; /* Soft cocoa text color for a warm look */
+  font-family: 'Gaegu', sans-serif; /* Vintage typewriter font with a fallback */
+  box-sizing: border-box; /* Box sizing for consistent layout */
+}
+
+/* Create the "string" effect */
+.polaroid-string:before {
+  content: '';
+  position: absolute;
+  top: 10px; /* Adjust the position of the string */
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  transform: translateY(-50%);
+}
+
